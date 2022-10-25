@@ -8,7 +8,9 @@ class BigDecimalInt{
     public: 
         BigDecimalInt(string p_num) : num(p_num) {}
         string get_num();
-        
+
+        bool operator<(BigDecimalInt anotherDec);
+
         bool operator>(BigDecimalInt anotherDec);                   // f
         bool operator==(BigDecimalInt anotherDec);                  // g
         BigDecimalInt operator=(BigDecimalInt anotherDec);          // h
